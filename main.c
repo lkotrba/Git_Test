@@ -3,13 +3,15 @@
 
 int main (int argc, char ** argv) 
 { 
-	char name [255]; 
+	char first [255], last [255]; 
 
 	printf ("Zadejte své jméno:"); 
-	fgets (jméno, 255, stdin); 
-	printf ("length =% d \ n", strlen (name)); / * ladicí øádek * / 
-	jméno [strlen (name) -1] = '\ 0'; / * odeberte nový øádek na konci * / 
+	fgets (first, 255, stdin); 
+	first [strlen (first) -1] = '\ 0'; / * odstranit nový øádek na konci * / 
 
-	printf ("Hello% s! \ n", jméno); 
-	návrat 0; 
+	printf ("Nyní zadejte své pøíjmení:"); 
+	dostane (poslední); /* pøeteèení zásobníku? co je to? * / 
+
+	printf ("Ahoj% s% s! \ n", první, poslední); 
+ 	návrat 0; 
 }
